@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#1f2a36"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" fill="#ffffff">
+    <text x="100" y="150" font-size="34" fill="#49bf9d" letter-spacing="6">PHP · MYSQL WEB APP</text>
+    <text x="100" y="235" font-size="72" font-weight="700">SV Bike Rental</text>
+  </g>
+  <g fill="none" stroke="#49bf9d" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="560" cy="640" r="130"/>
+    <circle cx="1040" cy="640" r="130"/>
+    <path d="M560 640 L700 470 L900 470 L1040 640"/>
+    <path d="M700 470 L800 640 L900 470"/>
+    <path d="M670 420 L760 420"/>
+    <path d="M900 470 L870 390 L940 390"/>
+  </g>
+  <g fill="#56687a">
+    <circle cx="560" cy="640" r="14"/>
+    <circle cx="1040" cy="640" r="14"/>
+    <circle cx="800" cy="640" r="20"/>
+  </g>
+  <text x="1500" y="830" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" fill="#8a9bab" text-anchor="end">Booking · Login · Fleet &amp; pricing</text>
+</svg>

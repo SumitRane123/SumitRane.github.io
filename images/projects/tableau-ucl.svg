@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#1f2a36"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" fill="#ffffff">
+    <text x="100" y="150" font-size="34" fill="#49bf9d" letter-spacing="6">TABLEAU DASHBOARD</text>
+    <text x="100" y="235" font-size="72" font-weight="700">Champions League Era Stats</text>
+  </g>
+  <g fill="#49bf9d">
+    <rect x="100"  y="560" width="90" height="220" rx="6"/>
+    <rect x="230"  y="460" width="90" height="320" rx="6" opacity=".85"/>
+    <rect x="360"  y="620" width="90" height="160" rx="6" opacity=".7"/>
+    <rect x="490"  y="400" width="90" height="380" rx="6"/>
+    <rect x="620"  y="520" width="90" height="260" rx="6" opacity=".85"/>
+  </g>
+  <rect x="100" y="790" width="610" height="3" fill="#56687a"/>
+  <g fill="none" stroke="#56687a" stroke-width="3">
+    <circle cx="1150" cy="590" r="190"/>
+    <circle cx="1150" cy="590" r="120"/>
+  </g>
+  <path d="M1150 400 A190 190 0 1 1 990 690 L1048 652 A120 120 0 1 0 1150 470 Z" fill="#49bf9d"/>
+  <text x="1150" y="608" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="54" font-weight="700" fill="#ffffff" text-anchor="middle">UCL</text>
+</svg>

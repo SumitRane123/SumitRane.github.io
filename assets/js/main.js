@@ -114,4 +114,38 @@
 
 			});
 
+	// Main Sections: Three.
+
+		// Contact form (sends via FormSubmit without leaving the page).
+			$('#contact-form').on('submit', function(event) {
+
+				var $form = $(this),
+					$status = $('#contact-status'),
+					$button = $form.find('input[type="submit"]');
+
+				event.preventDefault();
+
+				$button.prop('disabled', true);
+				$status.text('Sending...');
+
+				$.ajax({
+					url: $form.attr('action').replace('formsubmit.co/', 'formsubmit.co/ajax/'),
+					method: 'POST',
+					data: $form.serialize(),
+					dataType: 'json',
+					headers: { 'Accept': 'application/json' }
+				})
+					.done(function() {
+						$form[0].reset();
+						$status.text('Thanks! Your message has been sent.');
+					})
+					.fail(function() {
+						$status.text('Sorry, something went wrong. Please email me directly instead.');
+					})
+					.always(function() {
+						$button.prop('disabled', false);
+					});
+
+			});
+
 })(jQuery);
