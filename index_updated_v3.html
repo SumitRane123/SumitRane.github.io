@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>Sumit Rane | GTM Systems, Analytics & Automation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Sumit Rane works across GTM operations, business analytics, workflow automation, and data systems. Explore selected projects and case studies." />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<style>
+			:root { --accent: #4e8f86; --ink: #25323b; --muted: #687781; --panel: #f5f7f8; }
+			html { scroll-behavior: smooth; }
+			body { color: var(--ink); }
+			a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+			#header { background-image: linear-gradient(180deg, rgba(19,32,42,.50), rgba(19,24,29,.91)), url("images/bg.jpg"); background-position: center; }
+			#header .inner { display: flex; flex-direction: column; align-items: flex-start; }
+			#header .image.avatar { width: 6.5em; margin-bottom: 1.5em; }
+			#header h1 { max-width: 12em; font-size: 1.45em; line-height: 1.55; text-align: left; }
+			#header h1 .eyebrow { display:block; margin-bottom:.8em; color:#c9d8d8; font-size:.55em; font-weight:600; letter-spacing:.16em; text-transform:uppercase; }
+			#header h1 .hero-title { display:block; color:#fff; font-size:1.45em; line-height:1.2; margin-bottom:.5em; }
+			#header h1 .hero-copy { display:block; color:rgba(255,255,255,.78); font-size:.72em; line-height:1.65; }
+			.hero-actions { display:flex; flex-wrap:wrap; gap:.65em; margin-top:1.5em; }
+			.hero-actions .button { margin:0; font-size:.75em; padding:0 1.2em; height:3.2em; line-height:3.2em; }
+			.button.primary { background:var(--accent); border-color:var(--accent); color:#fff !important; box-shadow:none; }
+			.button.primary:hover { background:#3e7770; border-color:#3e7770; }
+			#one .intro-grid { display:grid; grid-template-columns:1.5fr 1fr; gap:2em; align-items:start; }
+			#one p { max-width: 68em; }
+			.focus-list { display:flex; flex-wrap:wrap; gap:.55em; margin:1.1em 0 0; padding:0; list-style:none; }
+			.focus-list li { padding:.42em .8em; border:1px solid #dce5e7; border-radius:99px; background:#f7f9f9; color:#42645f; font-size:.8em; }
+			.metric-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:.75em; margin:1.7em 0 0; }
+			.metric { padding:1em; border:1px solid #e4e9eb; border-radius:8px; background:#fff; }
+			.metric strong { display:block; font-size:1.55em; line-height:1.2; color:#315f5a; }
+			.metric span { display:block; margin-top:.35em; font-size:.76em; color:var(--muted); line-height:1.45; }
+			.section-kicker { color:var(--accent); font-size:.75em; font-weight:700; letter-spacing:.12em; text-transform:uppercase; margin-bottom:.7em; }
+			.project-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.5em; }
+			.project-card { overflow:hidden; border:1px solid #e5eaec; border-radius:10px; background:#fff; transition:transform .2s ease, box-shadow .2s ease; }
+			.project-card:hover { transform:translateY(-3px); box-shadow:0 12px 30px rgba(30,48,57,.09); }
+			.seo-dashboard-images { display:grid; grid-template-columns:1fr 1fr; gap:.55em; padding:.65em; background:#eef2f7; }
+			.seo-dashboard-images a { display:block; overflow:hidden; border-radius:5px; }
+			.seo-dashboard-images img { display:block; width:100%; height:150px; object-fit:cover; object-position:top; }
+			@media screen and (max-width: 600px) { .seo-dashboard-images img { height:115px; } }
+			.project-image { display:block; margin:0; padding:0; overflow:hidden; background:#eef2f3; }
+			.project-image img { display:block; width:100%; height:auto; aspect-ratio:16 / 8.4; object-fit:cover; }
+			.project-cover { min-height:170px; padding:1.25em; display:flex; flex-direction:column; justify-content:space-between; color:#fff; background:linear-gradient(135deg,#203b4b,#427b78); }
+			.project-cover.cover-data { background:linear-gradient(135deg,#172f48,#477ca1); }
+			.project-cover.cover-abm { background:linear-gradient(135deg,#2c2c48,#69679b); }
+			.project-cover.cover-outbound { background:linear-gradient(135deg,#283b35,#5b8b70); }
+			.project-cover.cover-retail { background:linear-gradient(135deg,#173d5b,#477da4); }
+			.project-cover.cover-sports { background:linear-gradient(135deg,#142f56,#316da0); }
+			.project-cover.cover-product { background:linear-gradient(135deg,#252b36,#4c5968); }
+			.cover-label { font-size:.68em; letter-spacing:.14em; text-transform:uppercase; opacity:.8; }
+			.cover-title { max-width:14em; font-size:1.4em; font-weight:700; line-height:1.2; }
+			.cover-stack { font-size:.78em; opacity:.8; }
+			.project-content { padding:1.25em 1.35em 1.4em; }
+			.project-content h3 { margin:0 0 .55em; font-size:1.12em; }
+			.project-content p { margin:0 0 1em; font-size:.9em; color:var(--muted); }
+			.project-meta { display:flex; flex-wrap:wrap; gap:.4em; margin-bottom:1em; }
+			.project-meta span { font-size:.7em; padding:.25em .55em; background:#f0f4f4; border-radius:4px; color:#45635f; }
+			.project-link { font-size:.83em; font-weight:600; }
+			.project-card[hidden] { display:none !important; }
+			.portfolio-actions { display:flex; justify-content:center; gap:.75em; flex-wrap:wrap; margin-top:2em; }
+			#experience .experience-item { display:grid; grid-template-columns: minmax(10em,.7fr) 2fr; gap:1.5em; padding:1.25em 0; border-bottom:1px solid #e6eaec; }
+			#experience .experience-item:last-child { border-bottom:0; }
+			.experience-date { color:var(--muted); font-size:.85em; }
+			.experience-item h3 { margin:0 0 .25em; }
+			.experience-item p { margin:0; color:var(--muted); font-size:.9em; }
+			.skills-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1em; }
+			.skill-group { border:1px solid #e5eaec; border-radius:8px; padding:1.1em; }
+			.skill-group h3 { margin:0 0 .7em; font-size:1em; }
+			.skill-tags { display:flex; flex-wrap:wrap; gap:.4em; }
+			.skill-tags span { padding:.3em .6em; background:#f2f5f6; border-radius:4px; color:#53636b; font-size:.78em; }
+			#three .contact-note { color:var(--muted); }
+			#footer .copyright { font-size:.8em; }
+			@media screen and (max-width: 980px) {
+				#header .inner { align-items:center; }
+				#header h1 { max-width:32em; text-align:center; }
+				#one .intro-grid { grid-template-columns:1fr; }
+				#experience .experience-item { grid-template-columns:1fr; gap:.4em; }
+			}
+			@media screen and (max-width: 600px) {
+				.project-grid, .skills-grid { grid-template-columns:1fr; }
+				.metric-grid { grid-template-columns:1fr; }
+				.project-cover { min-height:145px; }
+				#header h1 { font-size:1.25em; }
+			}
+		</style>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Header / Hero -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/avatar1.jpg" alt="Portrait of Sumit Rane" /></a>
+					<h1>
+						<span class="eyebrow">GTM Systems · Analytics · Automation</span>
+						<span class="hero-title">Hi, I'm Sumit Rane.</span>
+						<span class="hero-copy">I build systems that connect data, automation, and business growth — from smarter workflows to clearer business decisions.</span>
+					</h1>
+					<div class="hero-actions">
+						<a href="#projects" class="button primary">Explore Projects</a>
+						<a href="#contact" class="button">Get in Touch</a>
+					</div>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- About -->
+					<section id="about">
+						<header class="major">
+							<p class="section-kicker">A little about me</p>
+							<h2>Business thinking. Technical execution.</h2>
+						</header>
+						<div class="intro-grid">
+							<div>
+								<p>I'm a Computer Science Engineering graduate with a PGDM in Business Design &amp; Innovation, working across GTM operations, business analytics, and workflow automation.</p>
+								<p>At RevvGrowth, I've built prospecting workflows, developed account-prioritization models, executed outbound campaigns, and created analytics pipelines that turn fragmented marketing data into actionable insights. Previously, at IDA Food Ventures, I worked on outlet-level performance dashboards and business reporting across 32+ cloud kitchen outlets.</p>
+								<p>I enjoy understanding how a process works, identifying where it breaks down, and building practical solutions with data and automation.</p>
+								<ul class="focus-list">
+									<li>GTM Operations</li><li>Business Analytics</li><li>Workflow Automation</li><li>Data Pipelines</li><li>ABM &amp; Prospecting</li>
+								</ul>
+							</div>
+							<div class="metric-grid">
+								<div class="metric"><strong>10K+</strong><span>ICP-matched accounts sourced</span></div>
+								<div class="metric"><strong>60–70%</strong><span>Reported reduction in manual workflow effort</span></div>
+								<div class="metric"><strong>15+</strong><span>Signal categories in a weighted account-scoring model</span></div>
+							</div>
+						</div>
+						<ul class="actions" style="margin-top:1.5em">
+							<li><a href="https://www.linkedin.com/in/sumitrane06/" class="button" target="_blank" rel="noopener">Connect on LinkedIn</a></li>
+						</ul>
+					</section>
+
+				<!-- Featured projects -->
+					<section id="projects">
+						<header class="major">
+							<p class="section-kicker">Selected work</p>
+							<h2>Featured Projects</h2>
+						</header>
+						<p>Selected examples of how I approach GTM automation, analytics engineering, and business problems. Professional, independent, and academic projects are clearly represented.</p>
+						<div class="project-grid" id="project-grid">
+							<article class="project-card">
+								<a href="images/n8n.png" class="project-image" target="_blank" rel="noopener" aria-label="Open GTM workflow automation screenshot"><img src="images/n8n.png" alt="n8n GTM workflow automation with spreadsheet input, API requests, AI agents, merge, and Google Sheets update" loading="lazy" /></a>
+								<div class="project-content">
+									<h3>GTM Workflow Automation</h3>
+									<p>Automated repetitive prospecting, enrichment, and routing tasks to make outbound operations more efficient.</p>
+									<div class="project-meta"><span>n8n</span><span>Prospecting</span><span>Process design</span></div>
+									<a class="project-link" href="mailto:ranesumit0699@gmail.com?subject=GTM%20Workflow%20Automation%20Case%20Study">Ask about this case study →</a>
+								</div>
+							</article>
+							<article class="project-card">
+								<div class="project-cover cover-data"><span class="cover-label">Marketing analytics</span><span class="cover-title">GSC → BigQuery Analytics Pipeline</span><span class="cover-stack">SQL · BigQuery · Looker Studio</span></div>
+								<div class="project-content">
+									<h3>GSC → BigQuery Analytics Pipeline</h3>
+									<p>Built a reporting pipeline with SQL transformations for deduplication, URL normalization, and date-grain aggregation.</p>
+									<div class="project-meta"><span>SQL CTEs</span><span>BigQuery</span><span>SEO analytics</span></div>
+									<a class="project-link" href="mailto:ranesumit0699@gmail.com?subject=GSC%20BigQuery%20Pipeline%20Case%20Study">Ask about this case study →</a>
+								</div>
+							</article>
+							<article class="project-card">
+								<div class="project-cover cover-abm"><span class="cover-label">Account-based marketing</span><span class="cover-title">ABM Readiness Scoring Model</span><span class="cover-stack">Research · Scoring logic · ICP</span></div>
+								<div class="project-content">
+									<h3>ABM Readiness Scoring Model</h3>
+									<p>Designed a weighted account-scoring approach across 15+ signal categories, including hiring, funding, leadership changes, and SEO/content gaps.</p>
+									<div class="project-meta"><span>ABM</span><span>Market research</span><span>Prioritization</span></div>
+									<a class="project-link" href="mailto:ranesumit0699@gmail.com?subject=ABM%20Scoring%20Case%20Study">Ask about this case study →</a>
+								</div>
+							</article>
+							<article class="project-card">
+								<div class="project-cover cover-outbound"><span class="cover-label">Growth operations</span><span class="cover-title">Outbound Campaign Operations</span><span class="cover-stack">Segmentation · A/B testing · n8n</span></div>
+								<div class="project-content">
+									<h3>Outbound Campaign Operations</h3>
+									<p>Planned and executed outbound email campaigns, including copy testing, audience segmentation, automated sequences, and deliverability operations.</p>
+									<div class="project-meta"><span>Campaigns</span><span>Experimentation</span><span>Deliverability</span></div>
+									<a class="project-link" href="mailto:ranesumit0699@gmail.com?subject=Outbound%20Campaign%20Case%20Study">Ask about this case study →</a>
+								</div>
+							</article>
+
+							<!-- Additional projects: revealed by the Full Portfolio toggle -->
+							<article class="project-card extra-project" hidden>
+								<div class="seo-dashboard-images">
+									<a href="images/dash1-edited.png" target="_blank" rel="noopener" aria-label="Open redacted SEO overview dashboard"><img src="images/seo-dashboard-overview-redacted.png" alt="SEO performance overview dashboard with client-specific figures redacted" loading="lazy" /></a>
+									<a href="images/dash2-edited.png" target="_blank" rel="noopener" aria-label="Open redacted SEO performance dashboard"><img src="images/seo-dashboard-performance-redacted.png" alt="SEO performance reporting dashboard with client-specific figures redacted" loading="lazy" /></a>
+								</div>
+								<div class="project-content">
+									<h3>SEO Reporting Dashboards</h3>
+									<p>Two client-facing dashboard templates for SEO and content performance, including landing-page metrics, blog performance, lead generation, and LLM referral traffic.</p>
+									<div class="project-meta"><span>Looker Studio</span><span>GA4</span><span>Google Search Console</span><span>BigQuery</span></div>
+									<a class="project-link" href="mailto:ranesumit0699@gmail.com?subject=SEO%20Reporting%20Dashboards%20Case%20Study">Ask about this case study →</a>
+								</div>
+							</article>
+							<article class="project-card extra-project" hidden>
+								<a href="images/retail.png" class="image fit thumb"><img src="images/retail.png" alt="Retail product analytics dashboard" /></a>
+								<div class="project-content">
+									<h3><a href="https://github.com/SumitRane123/retailanalytics" target="_blank" rel="noopener">Retail Product Analytics</a></h3>
+									<p>Analyzed 300K+ retail transactions to explore sales trends, demand patterns, and product-level performance.</p>
+									<div class="project-meta"><span>Power BI</span><span>Analytics</span><span>Retail</span></div>
+									<a class="project-link" href="https://github.com/SumitRane123/retailanalytics" target="_blank" rel="noopener">View on GitHub →</a>
+								</div>
+							</article>
+							<article class="project-card extra-project" hidden>
+								<a href="images/tableau.png" class="image fit thumb"><img src="images/tableau.png" alt="Champions League Tableau dashboard" /></a>
+								<div class="project-content">
+									<h3><a href="https://github.com/SumitRane123/Tabs" target="_blank" rel="noopener">Champions League Era Stats</a></h3>
+									<p>A Tableau dashboard exploring club and player statistics across the Champions League era.</p>
+									<div class="project-meta"><span>Tableau</span><span>Sports analytics</span></div>
+									<a class="project-link" href="https://github.com/SumitRane123/Tabs" target="_blank" rel="noopener">View on GitHub →</a>
+								</div>
+							</article>
+							<article class="project-card extra-project" hidden>
+								<a href="images/figma.png" class="image fit thumb"><img src="images/figma.png" alt="GoMingle and other UI/UX design projects" /></a>
+								<div class="project-content">
+									<h3><a href="https://www.figma.com/@sumitrane" target="_blank" rel="noopener">GoMingle &amp; Product Design</a></h3>
+									<p>Co-founded a travel subscription concept and led product direction, prototype design, UX flows, and business-model development.</p>
+									<div class="project-meta"><span>Figma</span><span>Product strategy</span><span>UX</span></div>
+									<a class="project-link" href="https://www.figma.com/@sumitrane" target="_blank" rel="noopener">View design portfolio →</a>
+								</div>
+							</article>
+							<article class="project-card extra-project" hidden>
+								<a href="images/projects/bike-rental.svg" class="image fit thumb"><img src="images/projects/bike-rental.svg" alt="SV Bike Rental website project" /></a>
+								<div class="project-content">
+									<h3><a href="https://github.com/SumitRane123/SD-project" target="_blank" rel="noopener">SV Bike Rental Website</a></h3>
+									<p>A PHP and MySQL booking website with user sign-up, login, fleet pricing, and rental features.</p>
+									<div class="project-meta"><span>PHP</span><span>MySQL</span><span>Web development</span></div>
+									<a class="project-link" href="https://github.com/SumitRane123/SD-project" target="_blank" rel="noopener">View on GitHub →</a>
+								</div>
+							</article>
+						</div>
+						<div class="portfolio-actions">
+							<button type="button" class="button primary" id="toggle-projects" aria-expanded="false">Full Portfolio · View all projects</button>
+							<a href="https://github.com/SumitRane123" class="button" target="_blank" rel="noopener">GitHub Profile ↗</a>
+						</div>
+					</section>
+
+				<!-- Experience -->
+					<section id="experience">
+						<header class="major">
+							<p class="section-kicker">Where I've worked</p>
+							<h2>Experience</h2>
+						</header>
+						<div class="experience-item">
+							<div class="experience-date">November 2025 – Present · Remote</div>
+							<div><h3>GTM Specialist · RevvGrowth</h3><p>Build prospecting and enrichment workflows, support outbound campaign execution, develop ABM targeting models, evaluate CRM/MarTech platforms, and maintain marketing analytics pipelines and dashboards.</p></div>
+						</div>
+						<div class="experience-item">
+							<div class="experience-date">May 2025 – September 2025 · Goa</div>
+							<div><h3>Management Trainee · IDA Food Ventures</h3><p>Developed Power BI dashboards for outlet performance, ROI, and retention analysis across 32+ cloud kitchen outlets, and coordinated partner onboarding.</p></div>
+						</div>
+					</section>
+
+
+				<!-- Contact -->
+					<section id="contact">
+						<header class="major">
+							<p class="section-kicker">Let's connect</p>
+							<h2>Get In Touch</h2>
+						</header>
+						<p class="contact-note">Interested in business analytics, GTM systems, automation, or data-driven growth? Feel free to reach out.</p>
+						<div class="row">
+							<div class="col-8 col-12-small">
+								<form id="contact-form" method="post" action="https://formsubmit.co/ranesumit0699@gmail.com">
+									<input type="hidden" name="_subject" value="New message from your portfolio site" />
+									<input type="hidden" name="_template" value="table" />
+									<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" required /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" required /></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4" required></textarea></div>
+										<div class="col-12"><ul class="actions"><li><input type="submit" value="Send Message" /></li></ul><p id="contact-status" role="status"></p></div>
+									</div>
+								</form>
+							</div>
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									<li><h3 class="icon solid fa-envelope"><span class="label">Email</span></h3><a href="mailto:ranesumit0699@gmail.com">ranesumit0699@gmail.com</a></li>
+									<li><h3 class="icon brands fa-linkedin"><span class="label">LinkedIn</span></h3><a href="https://www.linkedin.com/in/sumitrane06/" target="_blank" rel="noopener">LinkedIn profile</a></li>
+									<li><h3 class="icon brands fa-github"><span class="label">GitHub</span></h3><a href="https://github.com/SumitRane123" target="_blank" rel="noopener">GitHub profile</a></li>
+									<li><h3 class="icon solid fa-map-marker-alt"><span class="label">Location</span></h3>Goa, India · Open to remote opportunities</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/sumitrane06/" class="icon brands fa-linkedin" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/SumitRane123" class="icon brands fa-github" target="_blank" rel="noopener"><span class="label">GitHub</span></a></li>
+						<li><a href="mailto:ranesumit0699@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Sumit Rane</li><li>Built with curiosity and data</li><li>Template: <a href="https://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				(function () {
+					const toggle = document.getElementById('toggle-projects');
+					const extras = document.querySelectorAll('.extra-project');
+					if (!toggle) return;
+					toggle.addEventListener('click', function () {
+						const expanded = toggle.getAttribute('aria-expanded') === 'true';
+						extras.forEach(function (project) { project.hidden = expanded; });
+						toggle.setAttribute('aria-expanded', String(!expanded));
+						toggle.textContent = expanded ? 'Full Portfolio · View all projects' : 'Show fewer projects';
+						if (expanded) document.getElementById('projects').scrollIntoView({ behavior: 'smooth', block: 'start' });
+					});
+				})();
+			</script>
+
+	</body>
+</html>
